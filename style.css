@@ -1,0 +1,270 @@
+html,body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+@keyframes for-line1 {
+    0% {
+        height: 0vmin;
+    }
+    40% {
+        height: 0vmin;
+    }
+    70% {
+        height: 32vmin;
+    }
+    100% {
+        height: 32vmin;
+    }
+}
+
+@keyframes for-line2 {
+    0% {
+        width: 0vmin;
+    }
+    40% {
+        width: 0vmin;
+    }
+    70% {
+        width: calc(50vmax + 28vmin);
+    }
+    100% {
+        width: calc(50vmax + 28vmin);
+    }
+}
+
+@keyframes for-line3 {
+    0% {
+        width: 0vmin;
+        margin-left: 100vmax;
+    }
+    40% {
+        width: 0vmin;
+        margin-left: 100vmax;
+    }
+    70% {
+        width: calc(50vmax + 30vmin);
+        margin-left: calc(50vmax - 30vmin);
+    }
+}
+
+@keyframes for-line4 {
+    0% {
+        height: 0vmin;
+    }
+    40% {
+        height: 0vmin;
+    }
+    70% {
+        height: 37vmin;
+    }
+    100% {
+        height: 37vmin;
+    }
+}
+
+@keyframes for-line5 {
+    0% {
+        width: 0vmin;
+    }
+    40% {
+        width: 0vmin;
+    }
+    70% {
+        width: calc(50vmax + 28vmin);
+    }
+    100% {
+        width: calc(50vmax + 28vmin);
+    }
+}
+
+@keyframes for-author-and-room {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes for-showcase {
+    0% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    50% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    70% {
+        width: 50vmin;
+        opacity: 1;
+    }
+}
+
+@keyframes for-target {
+    0% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    60% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    80% {
+        width: 50vmin;
+        opacity: 1;
+    }
+}
+
+@keyframes for-order {
+    0% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    70% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    90% {
+        width: 50vmin;
+        opacity: 1;
+    }
+}
+
+@keyframes for-connect {
+    0% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    80% {
+        width: 0vmin;
+        opacity: 0;
+    }
+    100% {
+        width: 50vmin;
+        opacity: 1;
+    }
+}
+    
+.line {
+    position: absolute;
+    background-color: red;
+}
+
+#line1 {
+    width: 2vmin;
+    height: 32vmin;
+    margin-top: 0px;
+    margin-left: calc(50vmax - 30vmin);
+    animation: for-line1 3s ease-out normal;
+}
+
+#line2 {
+    width: calc(50vmax + 28vmin);
+    height: 2vmin;
+    margin-top: 30vmin;
+    margin-left: calc(50vmax - 28vmin);
+    animation: for-line2 3s ease-out normal;
+}
+
+#line3 {
+    width: calc(50vmax + 30vmin);
+    height: 2vmin;
+    margin-top: 41vmin;
+    margin-left: calc(50vmax - 30vmin);
+    animation: for-line3 3s ease-out normal;
+}
+
+#line4 {
+    width: 2vmin;
+    height: 37vmin;
+    margin-top: 43vmin;
+    margin-left: calc(50vmax - 30vmin);
+    animation: for-line4 3s ease-out normal;
+}
+
+#line5 {
+    width: calc(50vmax + 28vmin);
+    height: 2vmin;
+    margin-top: 78vmin;
+    margin-left: calc(50vmax - 28vmin);
+    animation: for-line5 3s ease-out normal;
+}
+
+.text {
+    position: absolute;
+    font-family: 'Open Sans';
+    font-size: 4vmin;
+    font-weight: 700;
+    letter-spacing: -0.2vmin;
+    line-height: 4vmin;
+    color: red;
+}
+
+.chapter {
+    height: 8.8vmin;
+    top: 32vmin;
+}
+
+#author {
+    width: 24vmin;
+    left: calc(50vmax - 0vmin);
+    padding-top: 0.2vmin;
+    animation: for-author-and-room 2s ease-out normal;
+}
+
+#room {
+    width: 70vmin;
+    left: calc(50vmax - 30.4vmin);
+    padding-top: 0.2vmin;
+    animation: for-author-and-room 2s ease-out normal;
+}
+
+.menu {
+    height: 4vmin;
+    left: calc(50vmax - 26vmin);
+    padding-top 0.2vmin;
+    cursor: pointer;
+    overflow: hidden;
+    transition: padding-left 0.2s;
+}
+
+.menu:hover {
+    padding-left: 2vmin;
+}
+
+.titlemenu {
+    width: 50vmin;
+    font-size: 3.5vmin;
+}
+
+#showcase {
+    top: 56vmin;
+    width: 19.6vmin;
+    animation: for-showcase 2.4s ease-out normal;
+}
+
+#target {
+    top: 60vmin;
+    width: 25vmin;
+    animation: for-target 2.4s ease-out normal;
+}
+
+#order {
+    top: 64vmin;
+    width: 28vmin;
+    animation: for-order 2.4s ease-out normal;
+}
+
+#connect {
+    top: 67.8vmin;
+    width: 21.6vmin;
+    animation: for-connect 2.4s ease-out normal;
+}
